@@ -1,3 +1,7 @@
+## Important Notes on Cloudfront
+
+- https://github.com/sagidM/s3-resizer/issues/5
+
 ## What is it?
 
 It's AWS Lambda, which is a compute service that lets you run code without provisioning or managing servers.  
