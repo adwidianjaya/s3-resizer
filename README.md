@@ -168,3 +168,21 @@ The Amazon S3 website endpoints do not support HTTPS
 https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html  
 As a workaround, you have to use your own domain.  
 Please check out https://github.com/sagidM/s3-resizer/issues/7  
+
+## Old Redirection Rules
+```json
+[
+    {
+        "Condition": {
+            "HttpErrorCodeReturnedEquals": "404",
+            "KeyPrefixEquals": ""
+        },
+        "Redirect": {
+            "HostName": "avy5n1zr60.execute-api.ap-southeast-1.amazonaws.com",
+            "HttpRedirectCode": "307",
+            "Protocol": "https",
+            "ReplaceKeyPrefixWith": "default/imageResize?key="
+        }
+    }
+]
+```
