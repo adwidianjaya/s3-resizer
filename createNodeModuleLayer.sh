@@ -1,9 +1,9 @@
 #!/bin/bash
-mkdir awsSdkWithSharp
-cd awsSdkWithSharp
+mkdir nodejs
+cd nodejs
 cp ../package.json .
 npm install
 cd ../
-zip -r awsSdkWithSharp.zip awsSdkWithSharp
-rm -rf awsSdkWithSharp
+zip -r awsSdkWithSharp.zip nodejs
+rm -rf nodejs
 open .
